@@ -4,9 +4,12 @@ public class Pessoa{
     private int idade;
     private String email;
 
-    public Pessoa() {
-        
+    public Pessoa(String nome,int idade,String email){
+        this.nome = nome;
+        this.idade = idade;
+        this.email = email;
     }
+    public Pessoa(){}
 
 //nome
     public String getNome(){
@@ -30,10 +33,10 @@ public class Pessoa{
         this.email = email;
     }
 
-    public void status(){
+    public void exibirInformações(){
         System.out.println("SOBRE A PESSOA");
-        System.out.println("Nome: " + this.getNome());
-        System.out.println("Idade: " + this.getIdade());
-        System.out.println("Email: " + this.getEmail());
+        System.out.println("Nome: " + getNome());
+        System.out.println("Idade: " + getIdade());
+        System.out.println("Email: " + getEmail());
     }
 }
